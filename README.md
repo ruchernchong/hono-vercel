@@ -1,4 +1,8 @@
+# Hono Vercel
+Testing Hono API deployed on Vercel
+
+## Usage
 ```
-npm install
-npm run start
+pnpm i
+pnpm start
 ```
