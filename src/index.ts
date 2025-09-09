@@ -4,22 +4,26 @@ import { etag } from "hono/etag";
 import { logger } from "hono/logger";
 import { prettyJSON } from "hono/pretty-json";
 import { secureHeaders } from "hono/secure-headers";
+import { OpenAPIHono } from "@hono/zod-openapi";
 
 const app = new Hono();
+const api = new OpenAPIHono();
 
 const welcomeStrings = [
   "Hello Hono!",
   "To learn more about Hono on Vercel, visit https://vercel.com/docs/frameworks/hono",
 ];
 
-app.use(compress());
-app.use("*", etag());
-app.use(logger());
-app.use(prettyJSON());
-app.use(secureHeaders());
+api.use(compress());
+api.use("*", etag());
+api.use(logger());
+api.use(prettyJSON());
+api.use(secureHeaders());
 
-app.get("/", (c) => {
+api.get("/", (c) => {
   return c.json({ message: welcomeStrings.join("\n\n") });
 });
+
+app.route("/", api);
 
 export default app;
