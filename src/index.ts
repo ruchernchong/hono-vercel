@@ -5,6 +5,7 @@ import { logger } from "hono/logger";
 import { prettyJSON } from "hono/pretty-json";
 import { secureHeaders } from "hono/secure-headers";
 import { OpenAPIHono } from "@hono/zod-openapi";
+import { handle } from "hono/aws-lambda";
 
 const app = new Hono();
 const api = new OpenAPIHono();
@@ -25,5 +26,7 @@ api.get("/", (c) => {
 });
 
 app.route("/", api);
+
+export const handler = handle(app);
 
 export default app;
