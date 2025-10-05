@@ -10,10 +10,10 @@ importers:
     dependencies:
       '@hono/zod-openapi':
         specifier: ^1.1.0
-        version: 1.1.0(hono@4.9.6)(zod@4.1.5)
+        version: 1.1.0(hono@4.9.7)(zod@4.1.5)
       hono:
         specifier: ^4.9.6
-        version: 4.9.6
+        version: 4.9.7
       zod:
         specifier: ^4.1.5
         version: 4.1.5
@@ -431,8 +431,8 @@ packages:
     resolution: {integrity: sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==}
     engines: {node: '>=8'}
 
-  hono@4.9.6:
-    resolution: {integrity: sha512-doVjXhSFvYZ7y0dNokjwwSahcrAfdz+/BCLvAMa/vHLzjj8+CFyV5xteThGUsKdkaasgN+gF2mUxao+SGLpUeA==}
+  hono@4.9.7:
+    resolution: {integrity: sha512-t4Te6ERzIaC48W3x4hJmBwgNlLhmiEdEE5ViYb02ffw4ignHNHa5IBtPjmbKstmtKa8X6C35iWwK4HaqvrzG9w==}
     engines: {node: '>=16.9.0'}
 
   ignore@5.3.2:
@@ -727,17 +727,17 @@ snapshots:
       '@eslint/core': 0.15.2
       levn: 0.4.1
 
-  '@hono/zod-openapi@1.1.0(hono@4.9.6)(zod@4.1.5)':
+  '@hono/zod-openapi@1.1.0(hono@4.9.7)(zod@4.1.5)':
     dependencies:
       '@asteasolutions/zod-to-openapi': 8.1.0(zod@4.1.5)
-      '@hono/zod-validator': 0.7.2(hono@4.9.6)(zod@4.1.5)
-      hono: 4.9.6
+      '@hono/zod-validator': 0.7.2(hono@4.9.7)(zod@4.1.5)
+      hono: 4.9.7
       openapi3-ts: 4.5.0
       zod: 4.1.5
 
-  '@hono/zod-validator@0.7.2(hono@4.9.6)(zod@4.1.5)':
+  '@hono/zod-validator@0.7.2(hono@4.9.7)(zod@4.1.5)':
     dependencies:
-      hono: 4.9.6
+      hono: 4.9.7
       zod: 4.1.5
 
   '@humanfs/core@0.19.1': {}
@@ -947,7 +947,7 @@ snapshots:
 
   has-flag@4.0.0: {}
 
-  hono@4.9.6: {}
+  hono@4.9.7: {}
 
   ignore@5.3.2: {}
 
