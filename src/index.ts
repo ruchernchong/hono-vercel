@@ -6,6 +6,7 @@ import { prettyJSON } from "hono/pretty-json";
 import { secureHeaders } from "hono/secure-headers";
 import { OpenAPIHono } from "@hono/zod-openapi";
 import { handle } from "hono/aws-lambda";
+import { FOO } from "./constants.js";
 
 const app = new Hono();
 const api = new OpenAPIHono();
@@ -13,6 +14,7 @@ const api = new OpenAPIHono();
 const welcomeStrings = [
   "Hello Hono!",
   "To learn more about Hono on Vercel, visit https://vercel.com/docs/frameworks/hono",
+  FOO,
 ];
 
 api.use(compress());
