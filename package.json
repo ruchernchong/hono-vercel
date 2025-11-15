@@ -1,6 +1,9 @@
 {
   "name": "hono",
   "type": "module",
+  "imports": {
+    "#*": "./src/*"
+  },
   "dependencies": {
     "@hono/zod-openapi": "^1.1.0",
     "hono": "^4.9.6",

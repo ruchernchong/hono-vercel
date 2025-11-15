@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "rootDir": "src",
     "target": "ESNext",
     "module": "NodeNext",
     "moduleResolution": "nodenext",
@@ -8,7 +9,5 @@
     "outDir": "./dist",
     "verbatimModuleSyntax": true
   },
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules"]
 }

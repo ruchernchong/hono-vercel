@@ -6,7 +6,7 @@ import { prettyJSON } from "hono/pretty-json";
 import { secureHeaders } from "hono/secure-headers";
 import { OpenAPIHono } from "@hono/zod-openapi";
 import { handle } from "hono/aws-lambda";
-import { FOO } from "./constants.js";
+import { FOO } from "#constants.js";
 
 const app = new Hono();
 const api = new OpenAPIHono();
